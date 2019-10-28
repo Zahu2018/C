@@ -1,0 +1,41 @@
+// g++  5.4.0
+// functii prototipizate inainte
+
+#include <iostream>
+
+int xorr(int a, int b);
+int mol(int a, int b);
+
+int main()
+{
+    std::cout << "Rezultatul SI: " << xorr(1, 0) << "\n";
+    std::cout << "Rezultatul SAU: " << mol(1, 0);
+}
+
+int xorr(int a, int b){
+    return (a&&b);}
+
+int mol(int a, int b){
+    return (a||b);}
+-------------------------------------------------
+// g++  5.4.0
+// functii predefinite
+
+#include <iostream>
+
+int xorr(int a, int b)
+     {return (a&&b);}
+
+
+int mol(int a, int b)
+    {return (a||b);}
+
+int main()
+{
+    std::cout << "Rezultatul SI: " << xorr(1, 0) << "\n";
+    std::cout << "Rezultatul SAU: " << mol(1, 0);
+}
+
+--------------------------
+ getline (std::cin, var); // #include <string> = preia sir de la tastatura
+ getchar(); // pentru a mentine consola
